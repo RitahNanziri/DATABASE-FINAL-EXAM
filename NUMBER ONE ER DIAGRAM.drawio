@@ -1,0 +1,50 @@
+<mxfile host="Electron" modified="2024-04-22T13:15:30.351Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.1.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="cS019vsW6R2_prR-_gEA" version="24.1.0" type="device">
+  <diagram id="dkpOyIaB9h3Sd_z3oLHi" name="Page-1">
+    <mxGraphModel dx="880" dy="532" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p9jcmhMvwwe36YIAzj4J-1" value="Guest" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="140" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="p9jcmhMvwwe36YIAzj4J-2" value="Guest_id(PK)&lt;div&gt;Name&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="p9jcmhMvwwe36YIAzj4J-1">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="p9jcmhMvwwe36YIAzj4J-3" value="Reservations" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="140" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="p9jcmhMvwwe36YIAzj4J-8" value="Guest_id&lt;div&gt;Room_id&lt;/div&gt;&lt;div&gt;Start_date&lt;/div&gt;&lt;div&gt;End_date&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="p9jcmhMvwwe36YIAzj4J-3">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="p9jcmhMvwwe36YIAzj4J-5" value="Rooms" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="140" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="p9jcmhMvwwe36YIAzj4J-6" value="Room_id(Pk)&lt;div&gt;Room_number&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="p9jcmhMvwwe36YIAzj4J-5">
+          <mxGeometry y="50" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="p9jcmhMvwwe36YIAzj4J-10" value="" style="edgeStyle=orthogonalEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERzeroToOne;rounded=0;exitX=-0.006;exitY=0.3;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="379.99999999999994" y="200" as="sourcePoint" />
+            <mxPoint x="190.96" y="201" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p9jcmhMvwwe36YIAzj4J-11" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="540" y="200" as="sourcePoint" />
+            <mxPoint x="700" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p9jcmhMvwwe36YIAzj4J-12" value="" style="edgeStyle=orthogonalEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToOne;startArrow=ERmandOne;rounded=0;" edge="1" parent="1" source="p9jcmhMvwwe36YIAzj4J-2" target="p9jcmhMvwwe36YIAzj4J-6">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="390" y="330" as="sourcePoint" />
+            <mxPoint x="490" y="230" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="113" y="290" />
+              <mxPoint x="775" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
